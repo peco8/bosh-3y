@@ -1,0 +1,13 @@
+diff --git a/vendor/github.com/cloudfoundry/config-server/types/certificate_generator.go b/vendor/github.com/cloudfoundry/config-server/types/certificate_generator.go
+index 12a253f..bc04865 100644
+--- a/vendor/github.com/cloudfoundry/config-server/types/certificate_generator.go
++++ b/vendor/github.com/cloudfoundry/config-server/types/certificate_generator.go
+@@ -171,7 +171,7 @@ func generateCertTemplate(cParams certParams) (x509.Certificate, error) {
+ 	}
+
+ 	now := time.Now()
+-	notAfter := now.Add(365 * 24 * time.Hour)
++       notAfter := now.Add(1095 * 24 * time.Hour)
+
+ 	if cParams.Duration > 0 {
+ 		notAfter = now.Add(time.Duration(cParams.Duration*24) * time.Hour)

@@ -1,0 +1,3 @@
+[submodule "bosh-cli"]
+	path = bosh-cli
+	url = https://github.com/cloudfoundry/bosh-cli.git
